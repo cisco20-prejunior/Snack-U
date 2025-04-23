@@ -1,0 +1,41 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-branding h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #28a745;
+}
+
+.footer-branding p {
+    margin: 0.3rem 0 1rem;
+    font-style: italic;
+}
+
+.footer-links,
+.footer-contact,
+.footer-social,
+.footer-legal {
+    margin: 1rem 0;
+}
+
+.footer-copy {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
