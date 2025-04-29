@@ -3,48 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index-deploy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cards.css">
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <title>SnackU</title>
 </head>
 <body>
     <header>
-        <nav>
-        <ul class="nav">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html">SnackU</a>
+          </div>
+          <div class="menu-toggle" id="menu-toggle">
+            &#9776;
+          </div>
+          <ul class="nav" id="nav">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      
+            <li class="dropdown">
+              <a href="#">Productos</a>
+              <ul class="dropdown-content">
+                <li><a href="productos.html">Gluten Free</a></li>
+                <li><a href="productos.html">Vegano</a></li>
+                <li><a href="productos.html">Sin Azúcar</a></li>
+              </ul>
+            </li>
+      
+            <li class="dropdown">
+              <a href="#">Contacto</a>
+              <ul class="dropdown-content">
+                <li><a href="https://mail.google.com/mail/?view=cm&to=cisco.fv.29@gmail.com" target="_blank">Correo directo</a></li>
+                <li><a href="https://wa.me/51961431778" target="_blank">WhatsApp</a></li>
+                <li><a href="https://www.tiktok.com/@snacku" target="_blank">TikTok</a></li>
+              </ul>
+            </li>
+          </ul>
         </nav>
-        </header>
+      </header>
+      
     <main>
         <div class="title">
             <h1 class="tracking-in-contract">SnackU</h1>
             <p class="tracking-in-expand-forward-bottom">Pecar nunca supo tan bien</p>
         </div>
         <div class="container_cards">
-            <div class="card gluten_free">
-                <div class="card-text">
-                    <h2>Gluten Free</h2>
-                    <p>Descripción del Snack Sin Gluten.</p>
-                </div>
-                <img src="img/gluten-free.png" alt="Snack Sin Gluten">
+            <div class="card_info">
+              <h2>¿Qué es SnackU?</h2>
+              <p>
+                SnackU nace como una alternativa saludable y realista para estudiantes universitarios que viven a mil por hora. Creemos que comer bien no debería ser un lujo, y por eso ofrecemos snacks prácticos, ricos y con ingredientes que cuidan tu cuerpo sin complicarte la vida. Porque sabemos que entre clases, trabajos y vida social, lo último que quieres es preocuparte por comer mejor: nosotros lo hacemos por ti.
+              </p>
             </div>
-            <div class="card vegan">
-                <img src="img/vegan.png" alt="Snack Vegano">
-                <div class="card-text">
-                <h2>Vegano</h2>
-                <p>Descripción del Snack Vegano.</p>
+          
+            <div class="card_info">
+              <h2>Nuestra Misión</h2>
+              <p>
+                Ofrecer opciones de snacks saludables, accesibles y sabrosos para estudiantes universitarios, promoviendo un estilo de vida balanceado sin sacrificar el sabor ni la conveniencia. Buscamos ser la marca aliada en el día a día de los jóvenes que quieren cuidarse, pero no tienen tiempo para complicarse.
+              </p>
             </div>
+          
+            <div class="card_info">
+              <h2>Nuestra Visión</h2>
+              <p>
+                Ser la marca líder de snacks saludables en universidades de Latinoamérica, transformando la forma en que los jóvenes se alimentan, inspirando elecciones conscientes, y demostrando que lo saludable también puede ser cool, accesible y parte de su identidad.
+              </p>
             </div>
-            <div class="card sugar_free">
-                <div class="card-text">
-                <h2>Sin Azúcar</h2>
-                <p>Descripción del Snack sin Azucar.</p>
-            </div>
-                <img src="img/sugar-free.png" alt="Snack Sin Azúcar">                
-            </div>
-        </div>
+        </div>          
     </main>
     <footer class="footer">
         <div class="footer-branding">
@@ -59,7 +83,8 @@
         </div>
     
         <div class="footer-contact">
-            <p>Correo: <a href="mailto:cisco.fv.29@gmail.com">cisco.fv.29@gmail.com</a></p>
+            <a href="https://mail.google.com/mail/?view=cm&to=cisco.fv.29@gmail.com" target="_blank">Correo directo</a>
+            <a href="https://wa.me/51987654321" target="_blank">WhatsApp</a>
             <p>Teléfono: +51 987 654 321</p>
         </div>
     
@@ -76,6 +101,6 @@
     
         <p class="footer-copy">&copy; 2025 SNACK U. Todos los derechos reservados.</p>
     </footer>
-    
+    <script src="index.js"></script>    
 </body>
 </html>

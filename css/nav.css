@@ -1,36 +1,80 @@
-
-/* Estilos del header y nav */
-  header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #1a0325;
-    z-index: 999;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  }
-  
-  .nav {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    padding: 1rem 2rem;
-  }
-  
-  .nav li a {
-    font-size: 1.3rem;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: sans-serif;
-    transition: color 0.2s ease;
-    -webkit-transition: color 0.2s ease;
-    -moz-transition: color 0.2s ease;
-    -ms-transition: color 0.2s ease;
-    -o-transition: color 0.2s ease;
+/* Navbar base */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a0325;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
 }
-  
-  .nav li a:hover {
-    color: #d1c631;
-  }
-  
+
+.logo a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+  position: relative;
+}
+
+/* Menú en pantallas grandes */
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  padding: 0.5rem;
+}
+
+.nav a:hover {
+  color: #d1c631;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1a0325;
+  min-width: 180px;
+  z-index: 999;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+
+.dropdown-content li {
+  width: 100%;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 1rem;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
